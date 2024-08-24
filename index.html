@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>   
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header><img  class="imagen__alura"   src="./assets/Logo.png"></header>
+    
+    <main class="main">
+        <section class="form__box">
+            <div>
+                <input class="presentacion__texto"  type="text" placeholder="Ingrese el texto aqui" id="TextoEncriptar">
+            </div>
+            <div >
+                <label  class="terminos"   for="input-texto">Solo letras minúsculas sin acentos </label>
+                <br>
+                <div class="botones">
+                <button  class="encriptar" onclick="Encriptar()">Encriptar!</button>
+                <button  class="desencriptar" onclick="Desencriptar()">Desencriptar!</button>
+            </di>
+            </div>
+            <div class="texto__encriptado">
+                <img src="./assets/muneco.png" alt="muñeco">
+                <div class="mensaje__texto" id="mensaje-texto">
+                    <h2 id="titulo mensaje">Ningun mensaje encontrado</h2>
+                    <p id="parrafo">Ingresa el texto que desea encriptar o desencriptar</p>
+                <input   class="mensaje__encriptado "id="TextoRespuesta" type="text" placeholder="">
+            </div>
+        </div>
+            <div class="boton-copiar">
+                <button    class="boton-copiar-diseno" type="button" onclick="copiarContenido()">Copiar</button>
+            </div>
+        
+        </section>
+        
+    </main>
+    <footer  class="footer">
+        <p>Creado por YoNaranjo mi primer Encriptador</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+
+
+</html>
